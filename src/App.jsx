@@ -16,10 +16,10 @@ import Navbar from "./components/student/Navbar";
 
 const App = () => {
 
-  const isEducaoRoute= useMatch('/educator/*')
+  const isEducatorRoute= useMatch('/educator/*')
   return (
     <div className="text-default min-h-screen bg-[#0c0c1d]">
-   {!isEducaoRoute && <Navbar/>}
+   {!isEducatorRoute && <Navbar/>}
 
       <Routes>
         <Route path="/" element={<Home />} />
